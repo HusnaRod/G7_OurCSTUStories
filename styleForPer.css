@@ -20,25 +20,52 @@
     border: 1px rgb(0, 0, 0) solid;
     border-radius: 100%;
 }
-nav{ 
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    background-color: #D1495B;
-    color: white;
-    height: 60px;
-    width: 100%;
-    align-items: center;
-    font-size:20px ;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #D1495B, #f268ff); 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  position: sticky; 
+  top: 0;
+  z-index: 1000;
+  font-family: "Mali", cursive; 
+}
+.nav-text a img:hover {
+  transform: scale(1.1);
 }
 .nav-text{
     margin:0 0 0 30px;
     margin-top: 5px;
 }
-.menu{
-    display: flex;
-    flex-direction: row;
+.nav-text a img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; 
+  transition: transform 0.3s ease;
 }
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 8px 15px; 
+  border-radius: 25px; 
+  transition: all 0.3s ease; 
+}
+
+.menu a:hover {
+  background: rgba(255, 255, 255, 0.2); 
+  color: #000000; 
+  transform: scale(1.1);
+}
+
 #item{
     padding:0 30px 0 0;
     height: fit-content;
@@ -98,45 +125,53 @@ nav{
     margin: 50px;
     border-radius: 25px;
 }
+
 .t{
-  border: 1px solid black;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  padding: 8px 15px; 
+  border-radius: 25px; 
+  transition: all 0.3s ease; 
+  border: 1px solid rgb(0, 0, 0);
   width: 30%;
   text-align: center;
   border-radius: 70px;
 }
 .t:hover{
-  background-color: #D1495B;
-  color: white;
+  background: rgba(255, 255, 255, 0.2); 
+  transform: scale(1.1);
 }
-/* จัดตัวอักษรตรงกลาง */
+
 .back-img {
   position: absolute;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
   transform: rotateY(180deg);
-  background: linear-gradient(135deg, #ff7eb3, #ff758c); /* พื้นหลังแบบไล่สี */
+  background: linear-gradient(135deg, #ff7eb3, #ff758c); 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center; /* จัดข้อความตรงกลาง */
+  text-align: center; 
   color: white;
-  font-size: 18px; /* ขนาดตัวอักษร */
-  line-height: 1.5; /* ระยะห่างระหว่างบรรทัด */
-  transition: background 0.5s ease, transform 0.5s ease; /* เพิ่มการเปลี่ยนแปลงอย่างนุ่มนวล */
+  font-size: 18px; 
+  line-height: 1.5; 
+  transition: background 0.5s ease, transform 0.5s ease; 
 }
 
 /* เปลี่ยนสีพื้นหลังเมื่อ hover */
 .img:hover .back-img {
-  background: linear-gradient(135deg, #f5af19, #f12711); /* สีใหม่ */
-  transform: scale(1.05) rotateY(180deg); /* ขยายเล็กน้อย */
+  background: linear-gradient(135deg, #f5af19, #f12711); 
+  transform: scale(1.05) rotateY(180deg); 
 }
 
-/* เพิ่มเอฟเฟกต์แสงให้ front-img */
+
 .img:hover .front-img {
-  filter: brightness(0.8); /* ลดความสว่าง */
+  filter: brightness(0.8); 
 }
+
 
 
 /*Font*/
