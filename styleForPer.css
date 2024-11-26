@@ -10,6 +10,7 @@
 }
 .menu a:hover{
     color: white;
+    font-size: 22px;
 }
 .logo{
     mix-blend-mode: multiply;
@@ -44,31 +45,55 @@ nav{
 .nav-text{
     padding: 0 0 0 10px;
 }
-.grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+.box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
-#m1,#m2,#m3,#m4{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-#m5{
-    grid-column:1/3 ;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+
+.out{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
 }
 .member{
-    margin: 20px;
+  position: relative;
+  margin: 20px;
+  width: 250px;
+  height: 320px;
+}
+.img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+}
+.front-img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.back-img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+.img:hover{
+  transform: rotateY(180deg);
 }
 .text{
-    margin: 50px;
-    width: 100%;
+    width:100%;
+    height: 60px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    display: flex;
+    align-items: center;
 }
 
 
