@@ -24,7 +24,7 @@ body {
   }
   .hero-btn {
     padding: 15px 30px;
-    background-color: rgba(255, 247, 0, 0.503);
+    background-color: rgba(255, 225, 0, 0.595);
     color: #fff;
     border: none;
     border-radius: 30px;
@@ -85,11 +85,27 @@ body {
     margin-left: 5px;
 }
 header img{
-    width: 30%;
-    height: 350px;
+    width: 40%;
+    height: 500px;
     justify-content: flex-start;
     
 }
 article {
+    text-align: center;
+}
+section{margin-bottom: -100px;}
+.button{
+    text-align: center;
+    margin-bottom: -50px;
+}
+footer{
+    background-color: #ff6f61;
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.contact {
+    margin-top: 40px;
+    margin-bottom: -30px;
     text-align: center;
 }
