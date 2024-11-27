@@ -156,3 +156,25 @@ footer{
   display: block;
  }
 }
+@media screen and (min-width: 1000px) {
+  header img{
+    width: 30%;
+  }
+  header{
+    display: flex;
+    font-size: xx-large;
+    text-align: center;
+  }
+  h1{
+    font-size: xx-large;
+    margin: 0%;
+  }
+  header .text .hero-btn{
+  margin-left: -1%;
+  }
+  section .info-box{
+   display: block;
+    justify-content: center;
+    margin-left: 35%;
+  }
+}
