@@ -1,0 +1,245 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: "Noto Sans Thai", serif;
+}
+.menu a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.menu a:hover{
+    color: white;
+    font-size: 22px;
+}
+.menu {
+  display: flex;
+  gap: 20px; 
+}
+
+.menu a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  padding: 8px 15px; 
+  border-radius: 25px; 
+  transition: all 0.3s ease;
+}
+
+.menu a:hover {
+  background: rgba(255, 255, 255, 0.2); 
+  color: #ffffff; 
+  transform: scale(1.1); 
+}
+
+.logo{
+    mix-blend-mode: multiply;
+
+}
+.logo:hover{
+    border: 1px rgb(0, 0, 0) solid;
+    border-radius: 100%;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #D1495B, #45003a); 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  position: sticky; 
+  top: 0;
+  z-index: 1000;
+  font-family: "Mali", cursive; 
+}
+.nav-text a img:hover {
+  transform: scale(1.1);
+}
+.nav-text{
+    margin:0 0 0 30px;
+    margin-top: 5px;
+}
+.nav-text a img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; 
+  transition: transform 0.3s ease;
+}
+
+
+
+#item{
+    padding:0 30px 0 0;
+    height: fit-content;
+}
+.nav-text{
+    padding: 0 0 0 10px;
+}
+.box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.out{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
+}
+.member{
+  position: relative;
+  margin: 20px;
+  width: 400px;
+  height: 540px;
+}
+.img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+  border: 1px black solid;
+}
+.front-img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.back-img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+.img:hover{
+  transform: rotateY(180deg);
+}
+.text{
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: 50px;
+    border-radius: 25px;
+}
+.t{
+  border: 1px solid black;
+  width: 30%;
+  text-align: center;
+  border-radius: 70px;
+}
+.t:hover{
+  background: linear-gradient(135deg, #D1495B, #45003a); 
+  color: white;
+}
+/* จัดตัวอักษรตรงกลาง */
+.back-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  background: linear-gradient(135deg, #ff7eb3, #ff758c); 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; 
+  color: white;
+  font-size: 18px; 
+  line-height: 1.5; 
+  transition: background 0.5s ease, transform 0.5s ease; 
+}
+
+/* เปลี่ยนสีพื้นหลังเมื่อ hover */
+.img:hover .back-img {
+  background: linear-gradient(135deg, #f5af19, #f12711); 
+  transform: scale(1.05) rotateY(180deg); 
+}
+
+
+.img:hover .front-img {
+  filter: brightness(0.8); 
+}
+
+
+
+/*Font*/
+.mali-extralight {
+    font-family: "Mali", cursive;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .mali-light {
+    font-family: "Mali", cursive;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .mali-regular {
+    font-family: "Mali", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .mali-medium {
+    font-family: "Mali", cursive;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .mali-semibold {
+    font-family: "Mali", cursive;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .mali-bold {
+    font-family: "Mali", cursive;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .mali-extralight-italic {
+    font-family: "Mali", cursive;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .mali-light-italic {
+    font-family: "Mali", cursive;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .mali-regular-italic {
+    font-family: "Mali", cursive;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .mali-medium-italic {
+    font-family: "Mali", cursive;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .mali-semibold-italic {
+    font-family: "Mali", cursive;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .mali-bold-italic {
+    font-family: "Mali", cursive;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  /*ResponseSive*/
