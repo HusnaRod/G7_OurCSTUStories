@@ -6,12 +6,32 @@
 }
 .menu a{
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 .menu a:hover{
     color: white;
     font-size: 22px;
 }
+.menu {
+  display: flex;
+  gap: 20px; 
+}
+
+.menu a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  padding: 8px 15px; 
+  border-radius: 25px; 
+  transition: all 0.3s ease;
+}
+
+.menu a:hover {
+  background: rgba(255, 255, 255, 0.2); 
+  color: #ffffff; 
+  transform: scale(1.1); 
+}
+
 .logo{
     mix-blend-mode: multiply;
 
@@ -25,7 +45,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background: linear-gradient(135deg, #D1495B, #f268ff); 
+  background: linear-gradient(135deg, #D1495B, #45003a); 
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
   position: sticky; 
   top: 0;
@@ -46,25 +66,7 @@ nav {
   transition: transform 0.3s ease;
 }
 
-.menu {
-  display: flex;
-  gap: 20px;
-}
 
-.menu a {
-  text-decoration: none;
-  color: white;
-  font-size: 18px;
-  padding: 8px 15px; 
-  border-radius: 25px; 
-  transition: all 0.3s ease; 
-}
-
-.menu a:hover {
-  background: rgba(255, 255, 255, 0.2); 
-  color: #000000; 
-  transform: scale(1.1);
-}
 
 #item{
     padding:0 30px 0 0;
@@ -125,24 +127,17 @@ nav {
     margin: 50px;
     border-radius: 25px;
 }
-
 .t{
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-  font-size: 18px;
-  padding: 8px 15px; 
-  border-radius: 25px; 
-  transition: all 0.3s ease; 
-  border: 1px solid rgb(0, 0, 0);
+  border: 1px solid black;
   width: 30%;
   text-align: center;
   border-radius: 70px;
 }
 .t:hover{
-  background: rgba(255, 255, 255, 0.2); 
-  transform: scale(1.1);
+  background: linear-gradient(135deg, #D1495B, #45003a); 
+  color: white;
 }
-
+/* จัดตัวอักษรตรงกลาง */
 .back-img {
   position: absolute;
   width: 100%;
@@ -248,5 +243,3 @@ nav {
   }
   
   /*ResponseSive*/
-
-  
