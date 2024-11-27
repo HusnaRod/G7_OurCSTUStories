@@ -178,3 +178,23 @@ footer{
     margin-left: 35%;
   }
 }
+@media screen and (min-width: 1500px){
+  nav{
+    display: flex;
+  }
+  nav .logo{
+    text-align: left;
+  }
+  nav .menu{
+    display: flex;
+  }
+  section{
+    display: flex; 
+  }
+  section .info-box{
+    margin-left: -5%;
+  }
+  .logo{
+    margin-left: 1%;
+  }
+}
