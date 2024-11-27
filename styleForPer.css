@@ -296,5 +296,56 @@ h1{
       font-size: 12.5px;
     }
   }
-
-
+  @media only screen and (min-width:768px) and (max-width: 1024px){
+    *{
+      padding:0;
+      margin:0;
+    }
+    body{
+      padding:0;
+      margin: 0;
+      
+    }
+    .nav-text{
+      margin:0;
+    }
+    nav{
+      position: relative;
+      width: 100%;
+      border: 1px rgb(255, 255, 255) solid;
+      background: linear-gradient(135deg, #00bfff, #8c00ff); 
+    }
+    
+    .box{
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .out{
+      display:flex;
+      flex-direction: column;
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    h1{
+      width: 70%;
+      font-size: 1.4em;
+      background: linear-gradient(135deg, #00bfff, #8c00ff);
+      width: 40%;
+    }
+    .member{
+      width: 300px;
+      height: 400px;
+    }
+    .front-img>img{
+      width: 300px;
+      height: 400px;
+    }
+    p{
+      font-size: 12.5px;
+    }
+  
+  }
