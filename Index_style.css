@@ -90,7 +90,7 @@ header{
 .row_2{
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
 }
 
 .card{
