@@ -44,7 +44,6 @@ header{
 
 .header_text{
     text-align: center;
-    text-shadow: 2px 5px 7px #333;
     color: black;
     margin: 0;
     padding: 0;
@@ -52,6 +51,7 @@ header{
 
 #header_title{
     font-size: 3em;
+    text-shadow: 2px 5px 7px #333;
 }
 
 .blog{
@@ -96,7 +96,7 @@ header{
 .card{
     width: 30%;
     height: 250px;
-    background-color: #333;
+    background-color: lightgray;
     text-align: center;
     text-decoration: none;
     color: white;
