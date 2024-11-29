@@ -239,7 +239,77 @@ h1{
     font-weight: 700;
     font-style: italic;
   }
-  
+  footer{
+    margin-top: 70px;
+  }
+  .textguest{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2em;
+    width: 100%;
+    border: 60%;
+
+  }
+  form{
+    color: white;
+    width: 60%;
+    padding: 5%;
+    background: linear-gradient(135deg, #D1495B, #45003a);
+    border-radius: 60px;
+    transition: all 0.3s ease;
+  }
+  form:hover{
+    box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
+-webkit-box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
+-moz-box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
+transform: scale(1.05);
+  }
+  label{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  input, textarea, select{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+  button {
+    font-size: 1em;
+    width: 20%;
+    background: #5cb85c;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  button:hover {
+  background: #4cae4c;
+  }
+
+footer>h2{
+  color: #5cb85c;
+  padding:25px;
+  text-align: center;
+}
+
+  #entriesContainer {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 15px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
   /*ResponseSive*/
 /*phone*/
   @media only screen and (max-device-width: 767px) {
@@ -295,7 +365,33 @@ h1{
     p{
       font-size: 12.5px;
     }
+    .form{
+      display: flex;
+    }
+    label{
+      padding: 10px;
+    }
+    form{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    button{
+      width: 60%;
+      border-radius: 15px;
+    }
+    footer>h2{
+      color: white;
+      padding:25px;
+      text-align: center;
+    }
   }
+
+
+
+
+
+
   @media only screen and (min-width:768px) and (max-width: 1024px){
     *{
       padding:0;
@@ -315,7 +411,9 @@ h1{
       border: 1px rgb(255, 255, 255) solid;
       background: linear-gradient(135deg, #00bfff, #8c00ff); 
     }
-    
+    form{
+      background: linear-gradient(135deg, #00bfff, #8c00ff); 
+    }
     .box{
       display:flex;
       flex-direction: column;
