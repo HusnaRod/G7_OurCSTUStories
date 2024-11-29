@@ -1,0 +1,45 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdf7f7;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+}
+#item{
+    padding:0 15px 0 0;
+}
+.nav-text{
+    padding: 0 0 0 10px;
+}
+.logo img{
+    width: 150px;
+    margin-left: 5px;
+}
+.button{
+    text-align: center;
+    margin-bottom: -50px;
+}
+.btn {
+    padding: 15px 30px;
+    background-color:  rgba(255, 208, 0, 0.816);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.btn:hover {
+    background-color:#333;
+}
