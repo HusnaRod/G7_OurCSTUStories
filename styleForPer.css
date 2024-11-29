@@ -296,7 +296,11 @@ transform: scale(1.05);
   background: #4cae4c;
   }
 
-
+footer>h2{
+  color: #5cb85c;
+  padding:25px;
+  text-align: center;
+}
 
   #entriesContainer {
     margin: 20px auto;
@@ -375,6 +379,11 @@ transform: scale(1.05);
     button{
       width: 60%;
       border-radius: 15px;
+    }
+    footer>h2{
+      color: white;
+      padding:25px;
+      text-align: center;
     }
   }
 
