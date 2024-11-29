@@ -147,5 +147,30 @@
             </div>
         </div>
     </header>
+    <footer>
+        <h1>Guest Book</h1>
+    <form id="guestBookForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4" required></textarea><br>
+
+        <label for="rating">Rate our website:</label>
+        <select id="rating" name="rating">
+            <option value="">Choose a rating</option>
+            <option value="1">1 - Poor</option>
+            <option value="2">2 - Fair</option>
+            <option value="3">3 - Good</option>
+            <option value="4">4 - Very Good</option>
+            <option value="5">5 - Excellent</option>
+        </select><br>
+
+        <button type="submit">Submit</button>
+    </form>
+    <h2>Guest Book Entries</h2>
+    <div id="entriesContainer">
+        <p>No entries yet. Be the first to leave a comment!</p>
+    </div>
+    </footer>
 </body>
 </html>
