@@ -77,3 +77,6 @@ nav{
     position: relative;  
     z-index: 1;  
 }
+article {
+    text-align: center;
+}
