@@ -27,6 +27,62 @@
             มาร่วมแบ่งปันการเดินทางนี้และพัฒนาตัวเองไปด้วยกัน!
         </p>
     </article>
+    <h1>Our Journey</h1>
+    <div class="step-progress" id="progressBar1">
+        <div class="step" data-step="1" onclick="goToStep(1, this)"></div>
+        <div class="line"></div>
+        <div class="step" data-step="2" onclick="goToStep(2, this)"></div>
+        <div class="line"></div>
+        <div class="step" data-step="3" onclick="goToStep(3, this)"></div>
+        <div class="line"></div>
+        <div class="step" data-step="4" onclick="goToStep(4, this)"></div>
+    </div>
+
+    <div class="step-progress" id="progressBar2">
+        <div class="step" data-step="1" onclick="goToStep(1, this)"></div>
+        <div class="line"></div>
+        <div class="step" data-step="2" onclick="goToStep(2, this)"></div>
+        <div class="line"></div>
+        <div class="step" data-step="3" onclick="goToStep(3, this)"></div>
+        <div class="line"></div>
+        <div class="step" data-step="4" onclick="goToStep(4, this)"></div>
+    </div>
+    <script>
+        function goToStep(step, clickedElement) {
+            const progressContainer = clickedElement.closest('.step-progress');
+            const steps = progressContainer.querySelectorAll('.step');
+            const lines = progressContainer.querySelectorAll('.line');
+
+            steps.forEach((stepElement, index) => {
+                if (index + 1 < step) {
+                    stepElement.classList.add('completed');
+                    stepElement.classList.remove('active');
+                } else if (index + 1 === step) {
+                    stepElement.classList.add('active');
+                    stepElement.classList.remove('completed');
+                } else {
+                    stepElement.classList.remove('active', 'completed');
+                }
+            });
+
+            lines.forEach((line, index) => {
+                if (index < step - 1) {
+                    line.style.backgroundColor = '#f4bf00df';
+                } else {
+                    line.style.backgroundColor = '#939393';
+                }
+            });
+        }
+
+        function initializeProgressBars() {
+            document.querySelectorAll('.step-progress').forEach(progressContainer => {
+                const firstStep = progressContainer.querySelector('.step');
+                goToStep(1, firstStep);
+            });
+        }
+
+        window.onload = initializeProgressBars;
+    </script>
     
 </body>
 </html>

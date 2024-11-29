@@ -80,3 +80,51 @@ nav{
 article {
     text-align: center;
 }
+.step-progress {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+}
+
+.step {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #939393;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.step.active {
+    background-color: #f4bf00df;
+    border: 2px solid #f4bf00df;
+    font-weight: bold;
+    color: white;
+}
+
+.step.completed {
+    background-color: #f4bf00df;
+    border: 2px solid #f4bf00df;
+    color: white;
+}
+
+.step::after {
+    content: attr(data-step);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.line {
+    height: 2px;
+    background-color: #ddd;
+    flex-grow: 1;
+    align-self: center;
+    transition: background-color 0.3s; /* เพิ่มการเปลี่ยนสีให้กับเส้น */
+}
