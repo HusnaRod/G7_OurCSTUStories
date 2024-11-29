@@ -28,61 +28,94 @@
         </p>
     </article>
     <h1>Our Journey</h1>
-    <div class="step-progress" id="progressBar1">
-        <div class="step" data-step="1" onclick="goToStep(1, this)"></div>
-        <div class="line"></div>
-        <div class="step" data-step="2" onclick="goToStep(2, this)"></div>
-        <div class="line"></div>
-        <div class="step" data-step="3" onclick="goToStep(3, this)"></div>
-        <div class="line"></div>
-        <div class="step" data-step="4" onclick="goToStep(4, this)"></div>
-    </div>
+    <div class="container-out">
+        <div class="container">
+            <header>ชื่อจริง</header>
+            <div class="form-outer">
+                <div class="form">
+                    <div class="page slidepage">
+                    <p class="info">ปีที่ 1 เป็นอย่างนี้นี่เอง</p>
+                </div>
+                
+                  <div class="page">
+                        <p class="info">ปีที่ 2 เป็นอย่างนั้นสินะ</p>
+                  </div>
+                  
+                    <div class="page">
+                        <p class="info">ปีที่ 3 เป็นอย่างโน้นน่ะหรอ</p>
+                  </div>
+                    <div class="page">
+                        <p class="info">ปีที่ 4 เป็นอย่างนั้นก็โอเคนะ</p>
+                  </div>
+                </div>
+    
+    
+            <div class="step-progress" id="progressBar1">
+                <div class="step Btn1" data-step="1" onclick="goToStep(1, this)"></div>
+                <div class="line"></div>
+                <div class="step Btn2" data-step="2" onclick="goToStep(2, this)"></div>
+                <div class="line"></div>
+                <div class="step Btn3" data-step="3" onclick="goToStep(3, this)"></div>
+                <div class="line"></div>
+                <div class="step Btn4" data-step="4" onclick="goToStep(4, this)"></div>
+            </div>
+    
+    
+    
+            <script>
+                const slidepage = document.querySelector(".slidepage");
+                const one_Btn =document.querySelector(".Btn1");
+                const two_Btn =document.querySelector(".Btn2");
+                const three_Btn =document.querySelector(".Btn3");
+                const four_Btn =document.querySelector(".Btn4");
+                
 
-    <div class="step-progress" id="progressBar2">
-        <div class="step" data-step="1" onclick="goToStep(1, this)"></div>
-        <div class="line"></div>
-        <div class="step" data-step="2" onclick="goToStep(2, this)"></div>
-        <div class="line"></div>
-        <div class="step" data-step="3" onclick="goToStep(3, this)"></div>
-        <div class="line"></div>
-        <div class="step" data-step="4" onclick="goToStep(4, this)"></div>
-    </div>
-    <script>
-        function goToStep(step, clickedElement) {
-            const progressContainer = clickedElement.closest('.step-progress');
-            const steps = progressContainer.querySelectorAll('.step');
-            const lines = progressContainer.querySelectorAll('.line');
-
-            steps.forEach((stepElement, index) => {
-                if (index + 1 < step) {
-                    stepElement.classList.add('completed');
-                    stepElement.classList.remove('active');
-                } else if (index + 1 === step) {
-                    stepElement.classList.add('active');
-                    stepElement.classList.remove('completed');
-                } else {
-                    stepElement.classList.remove('active', 'completed');
+                one_Btn.addEventListener("click",function(){
+                    slidepage.style.marginLeft = "-0%";})
+                two_Btn.addEventListener("click",function(){
+                    slidepage.style.marginLeft = "-25%";});
+                three_Btn.addEventListener("click",function(){
+                    slidepage.style.marginLeft = "-50%";})
+                four_Btn.addEventListener("click",function(){
+                    slidepage.style.marginLeft = "-75%";})
+                
+                function goToStep(step, clickedElement) {
+                    const progressContainer = clickedElement.closest('.step-progress');
+                    const steps = progressContainer.querySelectorAll('.step');
+                    const lines = progressContainer.querySelectorAll('.line');
+        
+                    steps.forEach((stepElement, index) => {
+                        if (index + 1 < step) {
+                            stepElement.classList.add('completed');
+                            stepElement.classList.remove('active');
+                        } else if (index + 1 === step) {
+                            stepElement.classList.add('active');
+                            stepElement.classList.remove('completed');
+                        } else {
+                            stepElement.classList.remove('active', 'completed');
+                        }
+                    });
+        
+                    lines.forEach((line, index) => {
+                        if (index < step - 1) {
+                            line.style.backgroundColor = '#f4bf00df';
+                        } else {
+                            line.style.backgroundColor = '#939393';
+                        }
+                    });
                 }
-            });
-
-            lines.forEach((line, index) => {
-                if (index < step - 1) {
-                    line.style.backgroundColor = '#f4bf00df';
-                } else {
-                    line.style.backgroundColor = '#939393';
+        
+                function initializeProgressBars() {
+                    document.querySelectorAll('.step-progress').forEach(progressContainer => {
+                        const firstStep = progressContainer.querySelector('.step');
+                        goToStep(1, firstStep);
+                    });
                 }
-            });
-        }
-
-        function initializeProgressBars() {
-            document.querySelectorAll('.step-progress').forEach(progressContainer => {
-                const firstStep = progressContainer.querySelector('.step');
-                goToStep(1, firstStep);
-            });
-        }
-
-        window.onload = initializeProgressBars;
-    </script>
+        
+                window.onload = initializeProgressBars;
+            </script>
+        </div>
+    </div>
     
 </body>
 </html>

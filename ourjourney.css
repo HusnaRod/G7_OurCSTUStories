@@ -80,6 +80,49 @@ nav{
 article {
     text-align: center;
 }
+.container-out{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height: 100vh;
+}
+.container{
+    width:330px;
+    background: #fff;
+    border-radius: 5px;
+    text-align:center;
+    padding: 50px 35px 10px 35px;
+}
+.container header{
+    font-size: 35px;
+    font-weight: 600;
+    margin: 0 0 30px 0;
+}
+.container .form-outer{
+    width:100%;
+    overflow: hidden;
+}
+.form-outer .form{
+    display:flex;
+    width:400%;
+}
+.form-outer .form .page{
+    width:25%;
+    transition: margin-left 0.3s ease-in-out;
+}
+.form-outer .form .page .info{
+    text-align: center;
+    font-size: 15px;
+    font-weight:light;
+}
+
+
+
+
+
+
+
+
 .step-progress {
     display: flex;
     justify-content: space-between;
