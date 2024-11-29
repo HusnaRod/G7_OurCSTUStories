@@ -80,18 +80,25 @@ nav{
 article {
     text-align: center;
 }
+.head{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: -20px;
+}
 .container-out{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    min-height: 100vh;
+    display: flex;
+    justify-content: center; /* จัดแนวนอน */
+    align-items: center;     /* จัดแนวตั้ง */
+    flex-direction: column;
+    padding-top: 50px;
 }
 .container{
-    width:330px;
+    width:700px;
     background: #fff;
-    border-radius: 5px;
+    border-radius: 10px;
     text-align:center;
     padding: 50px 35px 10px 35px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 .container header{
     font-size: 35px;
