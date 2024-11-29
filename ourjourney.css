@@ -43,3 +43,37 @@ nav{
 .btn:hover {
     background-color:#333;
 }
+.header {
+    margin-top: 20px;
+    width: 100%;  
+    height: 200px;  
+    background-image: url('https://images.squarespace-cdn.com/content/v1/5f251c861a3dc74c86c18048/1625537875041-87ZZSVD08M4AGACJ19H8/Life%27s+a+Journey+1.jpg?format=2500w'); 
+    background-size: cover;  
+    background-position: center;  
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+    color: white;  
+    text-align: center;  
+    font-size: 36px;  
+    font-family: Arial, sans-serif;
+    position: relative;  
+}
+.header::after {
+    content: "";  
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);  
+    opacity: 0;  
+    transition: opacity 0.3s ease;  
+}
+.header:hover::after {
+    opacity: 1;  
+}
+.header h1 {
+    position: relative;  
+    z-index: 1;  
+}
