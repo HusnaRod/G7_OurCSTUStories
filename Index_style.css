@@ -91,11 +91,13 @@ header{
     display: flex;
     justify-content: center;
     gap: 20px;
+    padding-top: 10px;
 }
 
 .card{
-    width: 30%;
-    height: 250px;
+    width: 28%;
+    height: 400px;
+    padding: 15px;
     background-color: lightgray;
     text-align: center;
     text-decoration: none;
