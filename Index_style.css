@@ -136,3 +136,24 @@ header{
 .card p{
     padding: 5px;
 }
+.text-blog-sections {
+    margin-bottom: 10px;
+    text-align: center;
+}
+.blog-headers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+.bstar {
+    position:relative;
+    background-image: url(./logo/star.gif);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 30px;
+    width:30px
+}
