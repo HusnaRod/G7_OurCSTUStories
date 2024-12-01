@@ -177,3 +177,23 @@ header{
     height: 30px;
     width:30px
 }
+
+@media screen and (max-width: 768px){
+    .row{
+        flex-direction: column;
+    }
+    .row_2{
+        flex-direction: column;
+    }
+    .card{
+        width: 80%;
+    }
+    .menu{
+        flex-direction: column;
+        gap: 10px;
+    }
+    #item{
+        border-bottom: black solid 1px;
+        
+    }
+}
