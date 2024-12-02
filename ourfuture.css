@@ -186,6 +186,26 @@ nav .nav_text img{
  }
 }
 @media screen and (min-width: 700px) {
+  .menu{
+    text-align: center;
+    font-size: xx-large;
+  }
+ .nav-text .menu #item{
+    text-align: center;
+  }
+ .nav_text{
+    text-align: center;
+    margin-right: 2px;
+  }
+  .menu #item{
+    justify-content: space-between;
+    display: inline-table;
+    text-align: center;
+    margin-left: -2px;
+  }
+  .menu #item a{
+    text-align: center;
+  }
   header img{
     width: 30%;
   }
