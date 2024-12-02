@@ -159,14 +159,14 @@ article {
     transition: background-color 0.3s, color 0.3s;
 }
 .step.active {
-    background-color: #f4bf00df;
-    border: 2px solid #f4bf00df;
+    background-color: #d1496b;
+    border: 2px solid #d1496b;
     font-weight: bold;
     color: white;
 }
 .step.completed {
-    background-color: #f4bf00df;
-    border: 2px solid #f4bf00df;
+    background-color: #d1496b;
+    border: 2px solid #d1496b;
     color: white;
 }
 .step::after {
