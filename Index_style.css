@@ -273,13 +273,13 @@ header{
         height: 175px;
     }
 
-    .text-blog-sections{
-        justify-content: space-between;
-    }
-
     .text_blog{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+    }
+
+    .text-blog-sections p{
+        font-size: 12px;
     }
 }
