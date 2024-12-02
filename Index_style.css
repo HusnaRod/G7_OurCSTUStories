@@ -25,8 +25,28 @@ nav{
 #item a{
     text-decoration: none;
     color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    opacity: 0.75;
+    position: relative;
 }
-
+#item a:hover {
+    opacity: 1;
+}
+#item a::before {
+    transition: 300ms;
+    height: 2px;
+    content: "";
+    position: absolute;
+    background-color: #031D44;
+}
+#item a::before {
+    width: 0%;
+    bottom: -4px;
+}
+#item a:hover::before {
+    width: 100%;
+}
 .nav_text{
     position: relative;
     left:15px;
