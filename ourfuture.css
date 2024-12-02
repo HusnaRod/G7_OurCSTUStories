@@ -304,12 +304,6 @@ nav{
 }
 }
 @media screen and (min-width: 1024px){
-  nav{
-    display: flex;
-  }
-  nav .logo{
-    text-align: left;
-  }
   section{
     display: flex; 
   }
