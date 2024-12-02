@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap');
+* {
+    padding:0;
+    margin: 0;
+    font-family: "DM Serif Text", serif;
+}
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -6,47 +13,56 @@ body {
 }
 nav{
     display: flex;
-    flex-direction: row;
-    justify-content:space-between
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fdf7f7;
+    padding: 10px 30px;
 }
 .menu{
     display: flex;
-    flex-direction: row;
+    gap: 40px;
 }
-#item{
-    padding:0 15px 0 0;
-}
-.nav-text{
-    padding: 0 0 0 10px;
-}
-.logo img{
-    width: 150px;
-    margin-left: 5px;
-}
-.button{
-    text-align: center;
-    margin-bottom: -50px;
-}
-.btn {
-    padding: 15px 30px;
-    background-color:  rgba(255, 208, 0, 0.816);
-    color: #fff;
-    border: none;
-    border-radius: 30px;
-    font-size: 1em;
-    font-weight: bold;
-    cursor: pointer;
+#item a{
+    text-decoration: none;
+    color: black;
     text-transform: uppercase;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    text-decoration: none;
+    opacity: 0.75;
+    position: relative;
 }
-.btn:hover {
-    background-color:#333;
+#item a:hover {
+    opacity: 1;
+}
+#item a::before {
+    transition: 300ms;
+    height: 2px;
+    content: "";
+    position: absolute;
+    background-color: #031D44;
+}
+#item a::before {
+    width: 0%;
+    bottom: -4px;
+}
+#item a:hover::before {
+    width: 100%;
+}
+.nav_text{
+    position: relative;
+    left:15px;
+    color: black;
+    margin-right: auto;
+}
+
+.nav_text img{
+    height: 45px;
+    margin: 0;
+    padding: 0;
 }
 .header {
-    margin-top: 20px;
-    width: 100%;  
-    height: 200px;  
+    width:100%;
+    height:300px; 
+    margin-bottom: 20px; 
     background-image: url('https://images.squarespace-cdn.com/content/v1/5f251c861a3dc74c86c18048/1625537875041-87ZZSVD08M4AGACJ19H8/Life%27s+a+Journey+1.jpg?format=2500w'); 
     background-size: cover;  
     background-position: center;  
@@ -143,14 +159,14 @@ article {
     transition: background-color 0.3s, color 0.3s;
 }
 .step.active {
-    background-color: #f4bf00df;
-    border: 2px solid #f4bf00df;
+    background-color: #d1496b;
+    border: 2px solid #d1496b;
     font-weight: bold;
     color: white;
 }
 .step.completed {
-    background-color: #f4bf00df;
-    border: 2px solid #f4bf00df;
+    background-color: #d1496b;
+    border: 2px solid #d1496b;
     color: white;
 }
 .step::after {
@@ -166,39 +182,77 @@ article {
     transition: background-color 0.3s;
 }
 footer{
-    background-color: #f4bf00df;
-    width: 100%;
-    margin-top: 60px;
+    margin-top: 30px;
+    width: 100vw;
+    background-color: #d1496b;
+    color: #fdf7f7;
+    display: flex;
+}
+
+.footer_group{
+    width: 20%;
     text-align: center;
-    margin-bottom: 10px;
+    padding: 10px;
+    align-self: center;
+    font-size: 50px;
+}
+
+.footer_line{
+    width: 1px;
+    background-color: #fdf7f7;
+    margin: 20px 0px 20px 0px;
+}
+
+.contact_head{
+    font-size: 18px;
+    display: flex;
+}
+
+.footer_contact{
+    padding: 10px;
+    margin: 10px 0px 10px 0px;
+    width: 70%;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
 }
 @media screen and (max-width: 768px) {
     body {
         font-size: 14px;
         padding: 10px;
     }
-    nav {
+    nav{
         flex-direction: column;
         align-items: center;
-        padding: 10px 0;
-    }
-    .menu {
-        flex-direction: column;
-        padding: 0;
+        justify-content: space-between;
+        display: flex;
+        text-align: center;
     }
 
-    #item {
-        padding: 10px 0;
+    .menu{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 10px;
+        width: 100%;
     }
-    .nav-text {
-        padding-left: 0;
+
+    .nav_text{
+        left: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav_text img{
+        padding: 0;
+        margin: 0;
+        height: 40px;
+        width: auto;
     }
     .logo img {
         width: 120px;
-    }
-    .button {
-        margin-bottom: 0;
-        margin-top: 20px;
     }
     .btn {
         padding: 12px 25px;
@@ -232,8 +286,15 @@ footer{
     .line {
         height: 2px;
     }
-    footer {
-        padding: 10px;
-        font-size: 12px;
+    .footer_group{
+        font-size: 20px;
+    }
+
+    .contact_head{
+        font-size: 15px;
+    }
+
+    .footer_contact{
+        font-size: 13px;
     }
 }
