@@ -146,7 +146,6 @@ nav{
   padding: 10px 30px;
 }
 .menu{
-  display: flex;
   gap: 60px;
 }
 .nav_text{
@@ -168,23 +167,7 @@ nav{
   font-family: "DM Serif Text", serif;
   font-size: medium;
 }
-#item a:hover {
-  opacity: 1;
-}
-#item a::before {
-  transition: 300ms;
-  height: 2px;
-  content: "";
-  position: absolute;
-  background-color: #031D44;
-}
-#item a::before {
-  width: 0%;
-  bottom: -4px;
-}
-#item a:hover::before {
-  width: 100%;
-}
+
 @media only screen and (min-width: 100px) {
   body{width: auto;}
   nav{
@@ -216,6 +199,23 @@ nav{
     margin: 0;
     height: 40px;
     width: auto;
+}
+#item a:hover {
+  opacity: 1;
+}
+#item a::before {
+  transition: 300ms;
+  height: 2px;
+  content: "";
+  position: absolute;
+  background-color: #031D44;
+}
+#item a::before {
+  width: 0%;
+  bottom: -4px;
+}
+#item a:hover::before {
+  width: 100%;
 }
   header .text .hero-btn{
     display: inline-table;
@@ -309,9 +309,6 @@ nav{
   }
   nav .logo{
     text-align: left;
-  }
-  nav .menu{
-    display: flex;
   }
   section{
     display: flex; 
