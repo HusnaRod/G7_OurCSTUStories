@@ -52,7 +52,7 @@ body {
     max-width: 300px;
   }
   .info-box img {
-    width: 80px;
+    width: 60px;
     margin-bottom: 20px;
   }
   .info-box h3 {
@@ -63,14 +63,6 @@ body {
     font-size: 1em;
     color: #666;
   }
-  nav{
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    text-align: center;
-
-    
-}
 .menu{
     display: flex;
     flex-direction: row;
@@ -86,7 +78,7 @@ body {
     margin-left: 5px;
 }
 header img{
-    width: 40%;
+    width: 20%;
     height: 500px;
     justify-content: flex-start;
     
@@ -120,6 +112,36 @@ footer{
     text-transform: uppercase;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fdf7f7;
+  padding: 10px 30px;
+}
+.menu{
+  display: flex;
+  gap: 60px;
+}
+.nav_text{
+ position: relative;
+  left:15px;
+  color: black;
+  margin-right: auto;
+}
+nav .nav_text img{
+  width: 100px;
+}
+#item a{
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  opacity: 0.75;
+  position: relative;
+  font-family: "DM Serif Text", serif;
+  font-size: medium;
 }
 @media only screen and (min-width: 100px) {
   body{width: auto;}
