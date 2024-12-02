@@ -221,22 +221,6 @@ header{
         width: 100%;
     }
 
-    #item a{
-        border-bottom: #212121 solid 1px;
-        position: relative;
-        padding-bottom: 5px;
-        transition: 0.3s ease;
-    }
-
-    #item a:hover{
-        color: white;
-        padding-bottom: 5px;
-        position: relative;
-        background-color: #333;
-        padding: 5px 20px 0px 20px;
-        border-radius: 10px;
-    }
-
     .nav_text{
         left: 0px;
         display: flex;
