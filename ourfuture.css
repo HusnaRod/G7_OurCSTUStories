@@ -92,14 +92,39 @@ section{margin-bottom: -100px;}
     margin-bottom: -50px;
 }
 footer{
-    background-color: #ff6f61;
-    margin-top: 60px;
-    text-align: center;
-    margin-bottom: 10px;
+  width: 100%;
+  background-color: #d1496b;
+  color: #fdf7f7;
+  display: flex;
+  margin-top: 50px;
 }
-.contact {
-    margin-top: 40px;
-    text-align: center;
+
+.footer_group{
+  width: 20%;
+  text-align: center;
+  padding: 10px;
+  align-self: center;
+  font-size: 50px;
+}
+
+.footer_line{
+  width: 1px;
+  background-color: #fdf7f7;
+  margin: 20px 0px 20px 0px;
+}
+
+.contact_head{
+  font-size: 18px;
+  display: flex;
+}
+
+.footer_contact{
+  padding: 10px;
+  margin: 10px 0px 10px 0px;
+  width: 70%;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
 }
 .color {
   padding: 15px 30px;
@@ -184,8 +209,19 @@ nav .nav_text img{
  section{
   display: block;
  }
+ .footer_group{
+  font-size: 20px;
 }
-@media screen and (min-width: 700px) {
+
+.contact_head{
+  font-size: 15px;
+}
+
+.footer_contact{
+  font-size: 13px;
+}
+}
+@media screen and (min-width: 768px) {
   .menu{
     text-align: center;
     font-size: xx-large;
@@ -226,8 +262,11 @@ nav .nav_text img{
     justify-content: center;
     margin-left: 35%;
   }
+  .footer_group{
+    font-size: 30px;
 }
-@media screen and (min-width: 1500px){
+}
+@media screen and (min-width: 1024px){
   nav{
     display: flex;
   }
