@@ -131,7 +131,7 @@ nav{
   margin-right: auto;
 }
 nav .nav_text img{
-  width: 100px;
+  width: 120px;
 }
 #item a{
   text-decoration: none;
@@ -145,8 +145,15 @@ nav .nav_text img{
 }
 @media only screen and (min-width: 100px) {
   body{width: auto;}
-  nav .menu{
-  justify-content: flex-end;
+  .nav_text{
+    text-align: center;
+    margin-right: 2px;
+  }
+  .menu #item{
+    justify-content: space-between;
+    display: inline-table;
+    text-align: center;
+    margin-left: -2px;
   }
   header .text .hero-btn{
     display: inline-table;
