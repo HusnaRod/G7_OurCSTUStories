@@ -180,6 +180,11 @@ header{
     margin-bottom: 10px;
     text-align: center;
 }
+
+.text-blog-sections p{
+    font-size: 18px;
+}
+
 .blog-headers {
     display: flex;
     justify-content: center;
@@ -201,6 +206,18 @@ header{
 @media screen and (max-width: 1024px){
     .menu{
         gap: 40px;
+    }
+
+    .card{
+        height: 300px;
+    }
+
+    .card img{
+        height: 275px;
+    }
+
+    .text-blog-sections p{
+        font-size: 15px;
     }
 }
 
@@ -247,7 +264,22 @@ header{
     }
 
     .card{
-        width: 80%;
+        width: 70%;
         margin-left: auto;
-    }    
+        height: 200px;
+    }
+    
+    .card img{
+        height: 175px;
+    }
+
+    .text-blog-sections{
+        justify-content: space-between;
+    }
+
+    .text_blog{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 }
