@@ -204,29 +204,38 @@ footer{
 }
 @media only screen and (min-width: 100px) {
   body{width: auto;}
+  nav {
+    width: auto;
+    text-align: center;
+  }
   .nav_text{
     text-align: center;
-    margin-right: 2px;
+    margin-right: 15%;
   }
   .menu #item{
-    justify-content: space-between;
     display: inline-table;
-    text-align: center;
-    margin-left: -2px;
+    font-size: medium;
+    margin-right: 20px;
   }
-  header .text .hero-btn{
-    display: inline-table;
-    text-align: center;
-    margin-left: -100px;
+  header .slide{
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
-  header img{
-    width: 100%;
-  }
-  header .text{
-   float: buttom;
+  header .text h2{
+   text-align: center;
+   margin-top: auto;
+   margin-left: auto;
+   margin-right: auto;
   }
   header{
     display: block;
+    height: auto;
+    width: auto;
+  }
+  artical{
+    text-align: center;
+    width: auto;
   }
   h1{
     text-align: center;
@@ -243,6 +252,38 @@ footer{
  section{
   display: block;
  }
+ footer{
+  display: block;
+  text-align: center;
+  width: auto;
+  height: auto;
+ }
+.footer_contact{
+  display: block;
+}
+.footer_group{
+  text-align: center;
+}
+footer .footer_group p{
+ display: inline-table;
+  justify-content: center;
+  text-align: center;
+  margin-left: 120px;
+  margin-bottom: auto;
+  width: auto;
+}
+.footer_contact .contact_head{
+  text-align: center;
+  margin-left: 150px;
+}
+.footer_contact .contact_name{
+  text-align: center;
+  margin-left: 90px;
+}
+.footer_contact .contact_email{
+  text-align: center;
+  margin-left: 90px;
+}
 }
 @media screen and (min-width: 700px) {
   .menu{
