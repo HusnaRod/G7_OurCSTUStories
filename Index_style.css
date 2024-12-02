@@ -6,14 +6,14 @@
     font-family: "DM Serif Text", serif;
 }
 body{
-    background-color: #F7F7F7;
+    background-color: #fdf7f7;
 }
 
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #F7F7F7;
+    background-color: #fdf7f7;
     padding: 10px 30px;
 }
 
@@ -203,6 +203,43 @@ header{
     width:30px
 }
 
+footer{
+    width: 100%;
+    background-color: #d1496b;
+    color: #fdf7f7;
+    display: flex;
+}
+
+.footer_group{
+    width: 20%;
+    text-align: center;
+    padding: 10px;
+    align-self: center;
+    font-size: 50px;
+}
+
+.footer_line{
+    width: 1px;
+    background-color: #fdf7f7;
+    margin: 20px 0px 20px 0px;
+}
+
+.contact_head{
+    font-size: 18px;
+    display: flex;
+}
+
+.footer_contact{
+    padding: 10px;
+    margin: 10px 0px 10px 0px;
+    width: 70%;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
 @media screen and (max-width: 1024px){
     .menu{
         gap: 40px;
@@ -218,6 +255,10 @@ header{
 
     .text-blog-sections p{
         font-size: 15px;
+    }
+
+    .footer_group{
+        font-size: 30px;
     }
 }
 
@@ -281,5 +322,17 @@ header{
 
     .text-blog-sections p{
         font-size: 12px;
+    }
+
+    .footer_group{
+        font-size: 20px;
+    }
+
+    .contact_head{
+        font-size: 15px;
+    }
+
+    .footer_contact{
+        font-size: 13px;
     }
 }
