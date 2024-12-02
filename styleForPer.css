@@ -4,75 +4,60 @@
     box-sizing: border-box;
     font-family: "Noto Sans Thai", serif;
 }
-.menu a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
-.menu a:hover{
-    color: white;
-    font-size: 22px;
-}
-.menu {
-  display: flex;
-  gap: 20px; 
-}
 
-.menu a {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  font-size: 18px;
-  padding: 8px 15px; 
-  border-radius: 25px; 
-  transition: all 0.3s ease;
-}
 
-.menu a:hover {
-  background: rgba(255, 255, 255, 0.2); 
-  color: #ffffff; 
-  transform: scale(1.1); 
-}
 
-.logo{
-    mix-blend-mode: multiply;
-
-}
-.logo:hover{
-    border: 1px rgb(0, 0, 0) solid;
-    border-radius: 100%;
-}
-nav {
+nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-  background: linear-gradient(135deg, #D1495B, #45003a); 
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-  position: sticky; 
-  top: 0;
-  z-index: 1000;
-  font-family: "Mali", cursive; 
-}
-.nav-text a img:hover {
-  transform: scale(1.1);
-}
-.nav-text{
-    margin:0 0 0 30px;
-    margin-top: 5px;
-}
-.nav-text a img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%; 
-  transition: transform 0.3s ease;
+  background-color: #fdf7f7;
+  padding: 10px 30px;
 }
 
-#item{
-    padding:0 30px 0 0;
-    height: fit-content;
+.menu{
+  display: flex;
+  gap: 60px;
 }
-.nav-text{
-    padding: 0 0 0 10px;
+
+#item a{
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  opacity: 0.75;
+  position: relative;
 }
+#item a:hover {
+  opacity: 1;
+}
+#item a::before {
+  transition: 300ms;
+  height: 2px;
+  content: "";
+  position: absolute;
+  background-color: #031D44;
+}
+#item a::before {
+  width: 0%;
+  bottom: -4px;
+}
+#item a:hover::before {
+  width: 100%;
+}
+.nav_text{
+  position: relative;
+  left:15px;
+  color: black;
+  margin-right: auto;
+}
+
+.nav_text img{
+  height: 45px;
+  margin: 0;
+  padding: 0;
+}
+/*์NAV*/
 .box{
   display: flex;
   flex-direction: row;
@@ -242,74 +227,7 @@ h1{
   footer{
     margin-top: 70px;
   }
-  .textguest{
-    width: 100%;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  .form{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 2em;
-    width: 100%;
-    border: 60%;
-
-  }
-  form{
-    color: white;
-    width: 60%;
-    padding: 5%;
-    background: linear-gradient(135deg, #D1495B, #45003a);
-    border-radius: 60px;
-    transition: all 0.3s ease;
-  }
-  form:hover{
-    box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
--webkit-box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
--moz-box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
-transform: scale(1.05);
-  }
-  label{
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-  }
-  input, textarea, select{
-    width: 100%;
-    margin-bottom: 15px;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-  button {
-    font-size: 1em;
-    width: 20%;
-    background: #5cb85c;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  button:hover {
-  background: #4cae4c;
-  }
-
-footer>h2{
-  color: #5cb85c;
-  padding:25px;
-  text-align: center;
-}
-
-  #entriesContainer {
-    margin: 20px auto;
-    max-width: 600px;
-    padding: 15px;
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
+  
   /*ResponseSive*/
 /*phone*/
   @media only screen and (max-device-width: 767px) {
@@ -318,7 +236,6 @@ footer>h2{
       margin:0;
     }
     body{
-      background-color: #D1495B;
       padding:0;
       margin: 0;
       
@@ -380,11 +297,6 @@ footer>h2{
       width: 60%;
       border-radius: 15px;
     }
-    footer>h2{
-      color: white;
-      padding:25px;
-      text-align: center;
-    }
   }
 
 
@@ -409,10 +321,6 @@ footer>h2{
       position: relative;
       width: 100%;
       border: 1px rgb(255, 255, 255) solid;
-      background: linear-gradient(135deg, #00bfff, #8c00ff); 
-    }
-    form{
-      background: linear-gradient(135deg, #00bfff, #8c00ff); 
     }
     .box{
       display:flex;
