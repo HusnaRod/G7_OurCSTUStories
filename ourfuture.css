@@ -1,10 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap');
 body {
   font-family: "DM Serif Text", serif;
     margin: 0;
     padding: 0;
     background-color: #fdf7f7;
   }
-
+  section, article {
+    font-family: "Mitr", sans-serif;
+  }
   .hero-btn {
     padding: 15px 30px;
     background-color:  rgba(255, 225, 0, 0.595);

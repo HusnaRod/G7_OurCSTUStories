@@ -1,15 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap');
 * {
     padding:0;
     margin: 0;
-    font-family: "DM Serif Text", serif;
 }
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: "DM Serif Text", serif;
     margin: 0;
     padding: 0;
     background-color: #fdf7f7;
+}
+article p , .container {
+    font-family: "Mitr", sans-serif;
 }
 nav{
     display: flex;
@@ -72,7 +75,7 @@ nav{
     color: white;  
     text-align: center;  
     font-size: 36px;  
-    font-family: Arial, sans-serif;
+    font-family: "DM Serif Text", serif;
     position: relative;  
 }
 .header::after {
@@ -159,14 +162,14 @@ article {
     transition: background-color 0.3s, color 0.3s;
 }
 .step.active {
-    background-color: #d1496b;
-    border: 2px solid #d1496b;
+    background-color: #f4bf00df;
+    border: 2px solid #f4bf00df;
     font-weight: bold;
     color: white;
 }
 .step.completed {
-    background-color: #d1496b;
-    border: 2px solid #d1496b;
+    background-color: #f4bf00df;
+    border: 2px solid #f4bf00df;
     color: white;
 }
 .step::after {
