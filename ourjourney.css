@@ -348,4 +348,8 @@ footer{
     .footer_contact{
         font-size: 13px;
     }
+
+    .contact_name{
+        display: none;
+    }
 }
