@@ -488,4 +488,48 @@ h2{
         font-size: 13px;
     }
 
+    /* ANIMATION */
+}
+.text_blog {
+    animation: slideLeftAnimation both;
+    animation-timeline: view();
+}
+  
+@keyframes slideLeftAnimation {
+    15% {
+        transform: translateX(-1000px);
+    }
+  
+    35% {
+        transform: translateX(0px);
+    }
+}
+.card_blog {
+    max-width: 100vw;
+    animation: slideRightAnimation both;
+    animation-timeline: view();
+}
+  
+@keyframes slideRightAnimation {
+    15% {
+        transform: translateX(1000px);
+    }
+  
+    35% {
+        transform: translateX(0px);
+    }
+}
+
+.textguest {
+    animation: slideUpAnimation both;
+    animation-timeline: view();
+}
+@keyframes slideUpAnimation {
+    0% {
+        transform: translateY(1000px);
+    }
+  
+    35% {
+        transform: translateX(0px);
+    }
 }
