@@ -437,7 +437,7 @@ h2{
     .card{
         width: 70%;
         margin-left: auto;
-        height: 200px;
+        height: 210px;
     }
 
     .card p{
@@ -488,6 +488,10 @@ h2{
 
     .footer_contact{
         font-size: 13px;
+    }
+
+    .contact_name{
+        display: none;
     }
 
     /* ANIMATION */
