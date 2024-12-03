@@ -343,7 +343,11 @@ input, textarea, select{
     color: white;
     border: none;
     cursor: pointer;
+    width: 20%;
+    border-radius: 15px;
+    padding: 10px;
 }
+
 .sumbit:hover {
   background: #4cae4c;
 }
