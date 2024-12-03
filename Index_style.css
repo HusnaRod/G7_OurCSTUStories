@@ -223,7 +223,7 @@ header{
 
 .card p{
     border-top: solid white 1px;
-    font-size: 10px;
+    font-size: 15px;
     padding: 5px;
 }
 .text-blog-sections {
@@ -373,6 +373,10 @@ h2{
         height: 300px;
     }
 
+    .card p{
+        font-size: 10px;
+    }
+
     .card img{
         height: 275px;
     }
@@ -432,6 +436,10 @@ h2{
         width: 70%;
         margin-left: auto;
         height: 200px;
+    }
+
+    .card p{
+        font-size: 13px;
     }
     
     .card img{
