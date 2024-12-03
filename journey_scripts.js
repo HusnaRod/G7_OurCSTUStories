@@ -92,7 +92,7 @@ function goToStep(step, clickedElement) {
 
     lines.forEach((line, index) => {
         if (index < step - 1) {
-            line.style.backgroundColor = '#d1496b';
+            line.style.backgroundColor = '#f4bf00df';
         } else {
             line.style.backgroundColor = '#939393';
         }
