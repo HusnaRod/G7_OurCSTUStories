@@ -408,7 +408,7 @@ h2{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
+        width: 50%;
     }
 
     .nav_text img{
