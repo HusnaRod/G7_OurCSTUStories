@@ -11,6 +11,12 @@ document.addEventListener("DOMContentLoaded", () => {
             alert("Please fill out all fields!");
             return;
         }
+
+        const emptyMessage = document.getElementById("Noentry");
+        if (emptyMessage) {
+            emptyMessage.remove();
+        }
+
         const entry = document.createElement("div");
         entry.innerHTML = `
             <p><strong>Name:</strong> ${name}</p>
