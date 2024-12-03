@@ -386,6 +386,10 @@ footer{
         align-items: center;
     }
 
+    .info-box{
+      height: 300px;
+    }
+
     .footer_group{
         font-size: 20px;
     }
