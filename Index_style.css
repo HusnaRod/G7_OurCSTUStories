@@ -159,6 +159,9 @@ header{
     width: 90vw;
 }
 .text_blog{
+    background-color: var(--accent-color);
+    border-radius: 20px;
+    margin: 20px 0 20px 0;
     width: 30%;
     padding: 20px;
 }
@@ -277,6 +280,10 @@ footer{
     display: flex;
 }
 
+.contact_name {
+    font-family: "Mitr", sans-serif;
+}
+
 .footer_contact{
     padding: 10px;
     margin: 10px 0px 10px 0px;
@@ -310,9 +317,9 @@ form{
     transition: all 0.3s ease;
 }
 form:hover{
-    box-shadow: 10px 10px 15px 0px rgba(80, 222, 168, 0.485);
--webkit-box-shadow: 10px 10px 15px 0px rgba(80, 222, 168, 0.485);
--moz-box-shadow: 10px 10px 15px 0px rgba(80, 222, 168, 0.485);
+    box-shadow: 10px 10px 15px 0px #33333376;
+-webkit-box-shadow: 10px 10px 15px 0px #33333376;
+-moz-box-shadow: 10px 10px 15px 0px #33333376;
 transform: scale(1.05);
 }
 label{
