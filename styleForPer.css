@@ -196,6 +196,7 @@ h1{
   font-size: 18px; 
   line-height: 1.5; 
   transition: background 0.5s ease, transform 0.5s ease; 
+  padding:10px;
 }
 
 /* เปลี่ยนสีพื้นหลังเมื่อ hover */
