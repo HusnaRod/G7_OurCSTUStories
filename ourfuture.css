@@ -188,7 +188,6 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 20px;
     text-align: center;
     margin: 20px;
 }
@@ -201,11 +200,21 @@ header{
 
 .info-box{
     margin-bottom: 70px;
-}
-
-.info-box {
     text-align: center;
     width: 28%;
+    height: 200px;
+    padding: 10px;
+    transition: .5s;
+    background: rgba(255, 255, 255, 0.14);
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0.7px);
+    -webkit-backdrop-filter: blur(0.7px);
+    border: 1px solid rgba(255, 255, 255, 0.26);
+}
+
+.info-box:hover{
+  transform: scale(1.05);
 }
 
 .info-box img {
