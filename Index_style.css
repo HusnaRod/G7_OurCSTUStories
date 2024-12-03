@@ -27,6 +27,7 @@ body{
     background-color: var(--base-color);
     color: var(--text-color);
     font-family: "DM Serif Text", serif;
+    overflow-x: hidden;
 }
 
 nav{
@@ -45,6 +46,7 @@ nav{
     position: fixed;
     padding:5px;
     background-color: var(--accent-color);
+    z-index: 2;
 }
 button svg {
     height: 30px;
