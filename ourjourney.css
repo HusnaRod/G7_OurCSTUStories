@@ -211,7 +211,9 @@ footer{
     font-size: 18px;
     display: flex;
 }
-
+.contact_name {
+    font-family: "Mitr", sans-serif;
+}
 .footer_contact{
     padding: 10px;
     margin: 10px 0px 10px 0px;

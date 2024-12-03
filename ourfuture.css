@@ -1,29 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap');
+:root {
+  --base-color: #fdf7f7;
+  --base-variant: #212121;
+  --header-color:#F7F7F7;
+  --text-color: black;
+  --accent-color:#d1496b;
+  --glow-color: #d690a6;
+  --info-header: #333;
+  --info-body:#666;
+}
+.darkmode {
+  --base-color: #212121;
+  --header-color:#F7F7F7;
+  --base-variant: #212121;
+  --text-color: rgb(255, 255, 255);
+  --accent-color:#d1496b;
+  --glow-color: #d690a6;
+  --info-header: #d1496b;
+  --info-body:#eeeeee;
+}
 body {
   font-family: "DM Serif Text", serif;
     margin: 0;
     padding: 0;
-    background-color: #fdf7f7;
+    background-color: var(--base-color);
   }
   section, article {
     font-family: "Mitr", sans-serif;
-  }
-  .hero-btn {
-    padding: 15px 30px;
-    background-color:  rgba(255, 225, 0, 0.595);
-    color: #fff;
-    border: none;
-    border-radius: 30px;
-    font-size: 1em;
-    cursor: pointer;
-    text-transform: uppercase;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  .hero-btn:hover {
-    background-color:#333;
   }
   section {
     display: flex;
@@ -46,13 +51,14 @@ body {
   }
   .info-box h3 {
     font-size: 1.5em;
-    color: #333;
+    color: var(--info-header);
   }
   .info-box p {
     font-size: 1em;
-    color: #666;
+    color: var(--info-body);
   }
 article {
+    color: var(--text-color);
     text-align: center;
 }
 section{margin-bottom: -100px;}
@@ -62,7 +68,7 @@ section{margin-bottom: -100px;}
 }
 .color {
   padding: 15px 30px;
-    background-color:  #d1496b;
+    background-color:  var(--accent-color);
     color: #fff;
     border: none;
     border-radius: 30px;
@@ -76,8 +82,33 @@ nav{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #fdf7f7;
+  background-color: var(--base-color);
   padding: 10px 30px;
+}
+#theme-switch {
+  display: flex;
+  right: 15px;
+  border: 2px solid var(--accent-color);
+  border-radius: 50%;
+  position: fixed;
+  padding:5px;
+  background-color: var(--accent-color);
+}
+button svg {
+  height: 30px;
+  width: 100%;
+}
+#theme-switch svg:last-child {
+  display: none;
+}
+.darkmode #theme-switch svg:first-child{
+  display: none;
+}
+.darkmode #theme-switch svg:last-child{
+  display: block;
+}
+#theme-switch svg{
+  fill: var(--base-color);
 }
 .menu{
   display: flex;
@@ -86,7 +117,7 @@ nav{
 
 #item a{
   text-decoration: none;
-  color: black;
+  color: var(--text-color);
   text-transform: uppercase;
   text-decoration: none;
   opacity: 0.75;
@@ -101,7 +132,7 @@ nav{
   height: 2px;
   content: "";
   position: absolute;
-  background-color: #031D44;
+  background-color: var(--accent-color);
 }
 #item a::before {
   width: 0%;
@@ -111,10 +142,12 @@ nav{
   width: 100%;
 }
 .nav_text{
+  padding: 5px 10px;
   position: relative;
   left:15px;
-  color: black;
-  margin-right: auto;
+  color: var(--text-color);
+  background-color: var(--header-color);
+  border-radius: 20px;
 }
 
 .nav_text img{
@@ -142,7 +175,7 @@ header .text h2{
   margin-right: auto;
   margin-top: 10px;
   margin-bottom: 10px;
-  box-shadow: 0px 0px 20px #d1496b;
+  box-shadow: 0px 0px 20px var(--glow-color);
   overflow: hidden;
   border: 0px ;
   border-radius: 10px;
@@ -162,8 +195,8 @@ header .text h2{
 }
 footer{
   width: 100%;
-  background-color: #d1496b;
-  color: #fdf7f7;
+  background-color: var(--accent-color);
+  color: var(--base-color);
   display: flex;
 }
 
@@ -185,7 +218,9 @@ footer{
   font-size: 18px;
   display: flex;
 }
-
+.contact_name {
+  font-family: "Mitr", sans-serif;
+}
 .footer_contact{
   padding: 10px;
   margin: 10px 0px 10px 0px;
@@ -393,7 +428,7 @@ footer .footer_group p{
   footer{
     width: 100%;
     background-color: #d1496b;
-    color: #fdf7f7;
+    color: var(--base-color);
     display: flex;
   }
   .footer_group{
